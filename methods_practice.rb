@@ -26,8 +26,13 @@
 # answer = gets.chomp
 # p answer.to_i * 10
 
-# 6
-puts "Please enter two words for me."
-word_1 = gets.chomp
-word_2 = gets.chomp
-puts "#{word_1.upcase} #{word_2.upcase}"
+# # 6
+# puts "Please enter two words for me."
+# word_1 = gets.chomp
+# word_2 = gets.chomp
+# puts "#{word_1.upcase} #{word_2.upcase}"
+
+# 7
+puts "Please enter a word."
+answer = gets.chomp
+p answer.length
