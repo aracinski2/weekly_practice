@@ -16,7 +16,12 @@
 # number_2 = gets.chomp
 # p number_1.to_i + number_2.to_i
 
-# 4
-puts "Please enter a word."
+# # 4
+# puts "Please enter a word."
+# answer = gets.chomp
+# puts answer.reverse
+
+# 5
+puts "Please enter a number"
 answer = gets.chomp
-puts answer.reverse
+p answer.to_i * 10
