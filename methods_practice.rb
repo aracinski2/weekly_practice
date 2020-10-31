@@ -44,8 +44,15 @@
 #   puts "That's a negative number."
 # end
 
-# 9
-puts "If you give me two numbers, I bet I can multiply them."
-number1 = gets.chomp
-number2 = gets.chomp
-p number1.to_i * number2.to_i
+# # 9
+# puts "If you give me two numbers, I bet I can multiply them."
+# number1 = gets.chomp
+# number2 = gets.chomp
+# p number1.to_i * number2.to_i
+
+# 10
+puts "Please enter a word"
+word = gets.chomp
+if word.length > 5
+  p "That's a long word"
+end
