@@ -21,7 +21,13 @@
 # answer = gets.chomp
 # puts answer.reverse
 
-# 5
-puts "Please enter a number"
-answer = gets.chomp
-p answer.to_i * 10
+# # 5
+# puts "Please enter a number"
+# answer = gets.chomp
+# p answer.to_i * 10
+
+# 6
+puts "Please enter two words for me."
+word_1 = gets.chomp
+word_2 = gets.chomp
+puts "#{word_1.upcase} #{word_2.upcase}"
