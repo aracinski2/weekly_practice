@@ -32,7 +32,14 @@
 # word_2 = gets.chomp
 # puts "#{word_1.upcase} #{word_2.upcase}"
 
-# 7
-puts "Please enter a word."
+# # 7
+# puts "Please enter a word."
+# answer = gets.chomp
+# p answer.length
+
+# 8
+puts "Please enter a negative or positive number."
 answer = gets.chomp
-p answer.length
+if answer.to_i < 0
+  puts "That's a negative number."
+end
