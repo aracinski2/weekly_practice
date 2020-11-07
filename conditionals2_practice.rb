@@ -62,12 +62,21 @@
 #   p 1979
 # end
 
-# 8
-number = 9
-if number == 100
-  p 100
-elsif number == 99
-  p 99
+# # 8
+# number = 9
+# if number == 100
+#   p 100
+# elsif number == 99
+#   p 99
+# else
+#   p 0
+# end
+
+# 9
+number_1 = -1
+number_2 = 1
+if number_1 < 0 && number_2 > 0
+  p 1
 else
   p 0
 end
