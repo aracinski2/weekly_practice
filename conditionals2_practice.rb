@@ -72,11 +72,25 @@
 #   p 0
 # end
 
-# 9
-number_1 = -1
-number_2 = 1
-if number_1 < 0 && number_2 > 0
+# # 9
+# number_1 = -1
+# number_2 = 1
+# if number_1 < 0 && number_2 > 0
+#   p 1
+# else
+#   p 0
+# end
+
+# 10
+number = 2
+if number > 80
+  p 5
+elsif number > 60
+  p 4
+elsif number > 40
+  p 3
+elsif number > 20
+  p 2
+else 
   p 1
-else
-  p 0
 end
