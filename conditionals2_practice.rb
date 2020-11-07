@@ -16,11 +16,19 @@
 #   p 0
 # end
 
-# 3
-number_1 = 5
-number_2 = 11
-if number_1 < 10 && number_2 < 10
+# # 3
+# number_1 = 5
+# number_2 = 11
+# if number_1 < 10 && number_2 < 10
+#   p 1
+# else
+#   p 0
+# end
+
+# 4
+number = 9001
+if number > 9000
   p 1
 else
-  p 0
+  p -1
 end
