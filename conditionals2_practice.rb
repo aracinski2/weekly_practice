@@ -54,10 +54,20 @@
 #   p -100
 # end
 
-# 7
-number = 1
-if number < 0
-  p 1776
+# # 7
+# number = 1
+# if number < 0
+#   p 1776
+# else
+#   p 1979
+# end
+
+# 8
+number = 9
+if number == 100
+  p 100
+elsif number == 99
+  p 99
 else
-  p 1979
+  p 0
 end
