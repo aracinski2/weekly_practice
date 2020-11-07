@@ -33,14 +33,23 @@
 #   p -1
 # end
 
-# 5
-number = 34
-if number < 10
-  p 9
-elsif number < 20
-  p 19
-elsif number < 30
-  p 29
+# # 5
+# number = 34
+# if number < 10
+#   p 9
+# elsif number < 20
+#   p 19
+# elsif number < 30
+#   p 29
+# else
+#   p -1
+# end
+
+# 6
+number_1 = 102
+number_2 = 9
+if number_1 > 10 || number_2 > 10
+  p 100
 else
-  p -1
+  p -100
 end
