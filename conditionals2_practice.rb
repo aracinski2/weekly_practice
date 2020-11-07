@@ -45,11 +45,19 @@
 #   p -1
 # end
 
-# 6
-number_1 = 102
-number_2 = 9
-if number_1 > 10 || number_2 > 10
-  p 100
+# # 6
+# number_1 = 102
+# number_2 = 9
+# if number_1 > 10 || number_2 > 10
+#   p 100
+# else
+#   p -100
+# end
+
+# 7
+number = 1
+if number < 0
+  p 1776
 else
-  p -100
+  p 1979
 end
