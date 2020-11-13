@@ -17,9 +17,14 @@
 #   index += 1
 # end
 
-# 4
-array = [1]
-array << 2
-array << 3
-array << 4
+# # 4
+# array = [1]
+# array << 2
+# array << 3
+# array << 4
+# p array
+
+# 5
+array = ["hello there", "how are you", "sounds like fun"]
+array[2] = array[2].upcase
 p array
