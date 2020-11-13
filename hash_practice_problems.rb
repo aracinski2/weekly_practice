@@ -35,7 +35,13 @@
 # ]
 # p books[2][:author]
 
-# 6
-states = {illinois: "springield", colorado: "denver", texas: "houston"}
-states[:wisconsin] = "milwaukee"
-p states
+# # 6
+# states = {illinois: "springield", colorado: "denver", texas: "houston"}
+# states[:wisconsin] = "milwaukee"
+# p states
+
+# 7
+hash = {brand: "apple", model: "mac", year: 2019}
+p hash[:brand]
+p hash[:model]
+p hash[:year]
