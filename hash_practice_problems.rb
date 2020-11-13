@@ -54,7 +54,13 @@
 # ]
 # p array[1][:model]
 
-# 9
-hash = {food: "what you eat", water: "what u drink"}
-hash[:dog] = "an animal"
-p hash
+# # 9
+# hash = {food: "what you eat", water: "what u drink"}
+# hash[:dog] = "an animal"
+# p hash
+
+# 10
+hash = {brand: "adidas", color: "red", size: "small"}
+p hash[:brand]
+p hash[:color]
+p hash[:size]
