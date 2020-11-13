@@ -46,10 +46,15 @@
 # p hash[:model]
 # p hash[:year]
 
-# 8
-array = [
-  {brand: "apple", model: "mac"},
-  {brand: "lenovo", model: "ideapad"},
-  {brand: "dell", model: "alienware"}
-]
-p array[1][:model]
+# # 8
+# array = [
+#   {brand: "apple", model: "mac"},
+#   {brand: "lenovo", model: "ideapad"},
+#   {brand: "dell", model: "alienware"}
+# ]
+# p array[1][:model]
+
+# 9
+hash = {food: "what you eat", water: "what u drink"}
+hash[:dog] = "an animal"
+p hash
