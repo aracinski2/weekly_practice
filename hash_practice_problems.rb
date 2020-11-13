@@ -27,10 +27,15 @@
 # p book[:pages]
 # p book[:language]
 
-# 5
-books = [
-  {title: "hello there", author: "Obi Wan", pages: 203, language: "english"},
-  {title: "goodbye", author: "darth", pages: 189, language: "englishhhh"},
-  {title: "wassup", author: "qui gon", pages: 120, language: "english maybe"}
-]
-p books[2][:author]
+# # 5
+# books = [
+#   {title: "hello there", author: "Obi Wan", pages: 203, language: "english"},
+#   {title: "goodbye", author: "darth", pages: 189, language: "englishhhh"},
+#   {title: "wassup", author: "qui gon", pages: 120, language: "english maybe"}
+# ]
+# p books[2][:author]
+
+# 6
+states = {illinois: "springield", colorado: "denver", texas: "houston"}
+states[:wisconsin] = "milwaukee"
+p states
