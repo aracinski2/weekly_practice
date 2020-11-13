@@ -29,10 +29,15 @@
 # array[2] = array[2].upcase
 # p array
 
-# 6
-array = ["jon", "jack", "jim"]
-index = 0
-while index < array.length
-  p array[index]
-  index += 1
-end
+# # 6
+# array = ["jon", "jack", "jim"]
+# index = 0
+# while index < array.length
+#   p array[index]
+#   index += 1
+# end
+
+# 7
+array = ["hello there", "general kenobi"]
+array << "what a day"
+p array
