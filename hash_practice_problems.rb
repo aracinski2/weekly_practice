@@ -11,11 +11,18 @@
 # p array[0][:first]
 # p array[0][:last]
 
-# 3
-hash = {
-  burger: 10,
-  hot_dog: 4,
-  fries: 3
-}
-hash[:beef] = 12
-p hash
+# # 3
+# hash = {
+#   burger: 10,
+#   hot_dog: 4,
+#   fries: 3
+# }
+# hash[:beef] = 12
+# p hash
+
+# 4
+book = {title: "hello there", author: "Obi Wan", pages: 203, language: "english"}
+p book[:title]
+p book[:author]
+p book[:pages]
+p book[:language]
