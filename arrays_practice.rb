@@ -37,7 +37,12 @@
 #   index += 1
 # end
 
-# 7
-array = ["hello there", "general kenobi"]
-array << "what a day"
+# # 7
+# array = ["hello there", "general kenobi"]
+# array << "what a day"
+# p array
+
+# 8
+array = [1, 2, 3, 4, 5]
+array[0] = array[0] * 10
 p array
