@@ -47,10 +47,16 @@
 # array[0] = array[0] * 10
 # p array
 
-# 9
-array = [1,2]
-i = 0
-while i < array.length
-  p array[i]
-  i += 1
-end
+# # 9
+# array = [1,2]
+# i = 0
+# while i < array.length
+#   p array[i]
+#   i += 1
+# end
+
+
+# 10
+array = ["poland", "germany", "england"]
+array << "france"
+p array
