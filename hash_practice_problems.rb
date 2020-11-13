@@ -40,8 +40,16 @@
 # states[:wisconsin] = "milwaukee"
 # p states
 
-# 7
-hash = {brand: "apple", model: "mac", year: 2019}
-p hash[:brand]
-p hash[:model]
-p hash[:year]
+# # 7
+# hash = {brand: "apple", model: "mac", year: 2019}
+# p hash[:brand]
+# p hash[:model]
+# p hash[:year]
+
+# 8
+array = [
+  {brand: "apple", model: "mac"},
+  {brand: "lenovo", model: "ideapad"},
+  {brand: "dell", model: "alienware"}
+]
+p array[1][:model]
