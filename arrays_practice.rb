@@ -24,7 +24,15 @@
 # array << 4
 # p array
 
-# 5
-array = ["hello there", "how are you", "sounds like fun"]
-array[2] = array[2].upcase
-p array
+# # 5
+# array = ["hello there", "how are you", "sounds like fun"]
+# array[2] = array[2].upcase
+# p array
+
+# 6
+array = ["jon", "jack", "jim"]
+index = 0
+while index < array.length
+  p array[index]
+  index += 1
+end
