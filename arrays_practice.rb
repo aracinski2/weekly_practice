@@ -42,7 +42,15 @@
 # array << "what a day"
 # p array
 
-# 8
-array = [1, 2, 3, 4, 5]
-array[0] = array[0] * 10
-p array
+# # 8
+# array = [1, 2, 3, 4, 5]
+# array[0] = array[0] * 10
+# p array
+
+# 9
+array = [1,2]
+i = 0
+while i < array.length
+  p array[i]
+  i += 1
+end
