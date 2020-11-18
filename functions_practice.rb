@@ -39,9 +39,16 @@
 
 # p combine("hello", "there", "buddy")
 
-# 7
-def convert(number)
-  return number.to_s
+# # 7
+# def convert(number)
+#   return number.to_s
+# end
+
+# p convert(47)
+
+# 8
+def multiple(string)
+  return string * 5
 end
 
-p convert(47)
+p multiple("hello")
