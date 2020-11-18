@@ -25,9 +25,16 @@
 
 # p squared(8)
 
-# 5
-def first(string)
-  return string[0]
+# # 5
+# def first(string)
+#   return string[0]
+# end
+
+# p first("hello")
+
+# 6
+def combine(s1, s2, s3)
+  return "#{s1} #{s2} #{s3}"
 end
 
-p first("hello")
+p combine("hello", "there", "buddy")
