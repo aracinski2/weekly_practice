@@ -4,9 +4,16 @@
 # end
 # p doubler(10)
 
-# 2
-def capital(string)
-  return string.upcase
+# # 2
+# def capital(string)
+#   return string.upcase
+# end
+
+# p capital("hello there")
+
+# 3
+def subtract(number1, number2)
+  return number1 - number2
 end
 
-p capital("hello there")
+p subtract(10, 6)
