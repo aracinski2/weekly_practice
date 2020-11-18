@@ -18,9 +18,16 @@
 
 # p subtract(10, 6)
 
-# 4
-def squared(number)
-  return number * number
+# # 4
+# def squared(number)
+#   return number * number
+# end
+
+# p squared(8)
+
+# 5
+def first(string)
+  return string[0]
 end
 
-p squared(8)
+p first("hello")
