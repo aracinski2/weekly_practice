@@ -11,9 +11,16 @@
 
 # p capital("hello there")
 
-# 3
-def subtract(number1, number2)
-  return number1 - number2
+# # 3
+# def subtract(number1, number2)
+#   return number1 - number2
+# end
+
+# p subtract(10, 6)
+
+# 4
+def squared(number)
+  return number * number
 end
 
-p subtract(10, 6)
+p squared(8)
