@@ -32,9 +32,16 @@
 
 # p first("hello")
 
-# 6
-def combine(s1, s2, s3)
-  return "#{s1} #{s2} #{s3}"
+# # 6
+# def combine(s1, s2, s3)
+#   return "#{s1} #{s2} #{s3}"
+# end
+
+# p combine("hello", "there", "buddy")
+
+# 7
+def convert(number)
+  return number.to_s
 end
 
-p combine("hello", "there", "buddy")
+p convert(47)
