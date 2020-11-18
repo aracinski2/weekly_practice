@@ -46,9 +46,16 @@
 
 # p convert(47)
 
-# 8
-def multiple(string)
-  return string * 5
+# # 8
+# def multiple(string)
+#   return string * 5
+# end
+
+# p multiple("hello")
+
+# 9
+def average(n1, n2, n3)
+  return (n1 + n2 + n3)/ 3
 end
 
-p multiple("hello")
+p average(10, 4, 8.0)
