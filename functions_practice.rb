@@ -53,9 +53,16 @@
 
 # p multiple("hello")
 
-# 9
-def average(n1, n2, n3)
-  return (n1 + n2 + n3)/ 3
+# # 9
+# def average(n1, n2, n3)
+#   return (n1 + n2 + n3)/ 3
+# end
+
+# p average(10, 4, 8.0)
+
+# 10
+def big(number)
+  return (number * 10) + 30
 end
 
-p average(10, 4, 8.0)
+p big(10)
