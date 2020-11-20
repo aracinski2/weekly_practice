@@ -60,8 +60,8 @@
 # p names
 
 # 4
-array = [1, 2, 3]
-new_array = []
+# array = [1, 2, 3]
+# new_array = []
 # index = 0
 # while index < array.length
 #   new_array << array[index] + 7
@@ -74,7 +74,28 @@ new_array = []
 # end
 # p new_array
 
-new_array = array.map do |number|
-  number + 7
+# new_array = array.map do |number|
+#   number + 7
+# end
+# p new_array
+
+# 5
+strings = ["hello", "goodbye"]
+# new_array = []
+
+# index = 0
+# while index < strings.length
+#   new_array << strings[index].length
+#   index += 1
+# end
+# p new_array
+
+# strings.each do |string|
+#   new_array << string.length
+# end
+# p new_array
+
+new_array = strings.map do |string|
+  string.length
 end
 p new_array
