@@ -18,22 +18,43 @@
 # end
 # p new_array
 
-# 2
-array = ["hello", "goodbye"]
-# new_array = []
+# # 2
+# array = ["hello", "goodbye"]
+# # new_array = []
+# # index = 0
+# # while index < array.length
+# #   new_array << array[index].upcase
+# #   index += 1
+# # end
+# # p new_array
+
+# # array.each do |string|
+# #   new_array << string.upcase
+# # end
+# # p new_array
+
+# new_array = array.map do |string|
+#   string.upcase
+# end
+# p new_array
+
+# 3
+hashes = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+# new_hashes = []
+
 # index = 0
-# while index < array.length
-#   new_array << array[index].upcase
+# while index < hashes.length
+#   new_hashes << hashes[index][:name]
 #   index += 1
 # end
-# p new_array
+# p new_hashes
 
-# array.each do |string|
-#   new_array << string.upcase
+# hashes.each do |hash|
+#   new_hashes << hash[:name]
 # end
-# p new_array
+# p new_hashes
 
-new_array = array.map do |string|
-  string.upcase
+names = hashes.map do |hash|
+  hash[:name]
 end
-p new_array
+p names
