@@ -101,7 +101,7 @@
 # p new_array
 
 # 6
-hashes = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+# hashes = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
 # numbers = []
 
 # index = 0
@@ -116,7 +116,28 @@ hashes = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
 # end
 # p numbers
 
-numbers = hashes.map do |hash|
-  hash[:age]
+# numbers = hashes.map do |hash|
+#   hash[:age]
+# end
+# p numbers
+
+# 7
+array = [1, 2, 3]
+# new_array = []
+
+# index = 0
+# while index < array.length
+#   new_array << array[index] / 2.0
+#   index += 1
+# end
+# p new_array
+
+# array.each do |number|
+#   new_array << number / 2.0
+# end
+# p new_array
+
+new_array = array.map do |number|
+  number / 2.0
 end
-p numbers
+p new_array
