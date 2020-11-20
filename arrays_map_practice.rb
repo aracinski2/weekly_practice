@@ -80,7 +80,7 @@
 # p new_array
 
 # 5
-strings = ["hello", "goodbye"]
+# strings = ["hello", "goodbye"]
 # new_array = []
 
 # index = 0
@@ -95,7 +95,28 @@ strings = ["hello", "goodbye"]
 # end
 # p new_array
 
-new_array = strings.map do |string|
-  string.length
+# new_array = strings.map do |string|
+#   string.length
+# end
+# p new_array
+
+# 6
+hashes = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+# numbers = []
+
+# index = 0
+# while index < hashes.length
+#   numbers << hashes[index][:age]
+#   index += 1
+# end
+# p numbers
+
+# hashes.each do |hash|
+#   numbers << hash[:age]
+# end
+# p numbers
+
+numbers = hashes.map do |hash|
+  hash[:age]
 end
-p new_array
+p numbers
