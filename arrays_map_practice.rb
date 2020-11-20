@@ -122,7 +122,7 @@
 # p numbers
 
 # 7
-array = [1, 2, 3]
+# array = [1, 2, 3]
 # new_array = []
 
 # index = 0
@@ -137,7 +137,28 @@ array = [1, 2, 3]
 # end
 # p new_array
 
-new_array = array.map do |number|
-  number / 2.0
+# new_array = array.map do |number|
+#   number / 2.0
+# end
+# p new_array
+
+# 8
+strings = ["hello", "goodbye"]
+# letters = []
+
+# index = 0
+# while index < strings.length
+#   letters << strings[index][0]
+#   index += 1
+# end
+# p letters
+
+# strings.each do |string|
+#   letters << string[0]
+# end
+# p letters
+
+letters = strings.map do |string|
+  string[0]
 end
-p new_array
+p letters
