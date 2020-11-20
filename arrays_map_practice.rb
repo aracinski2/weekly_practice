@@ -164,7 +164,7 @@
 # p letters
 
 # 9
-hashes = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+# hashes = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
 # ages = []
 
 # index = 0
@@ -179,7 +179,28 @@ hashes = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
 # end
 # p ages
 
-ages = hashes.map do |hash|
-  hash[:age] * 2
+# ages = hashes.map do |hash|
+#   hash[:age] * 2
+# end
+# p ages
+
+# 10
+array = [1, 2, 3]
+# strings = []
+
+# index = 0
+# while index < array.length
+#   strings << array[index].to_s
+#   index += 1
+# end
+# p strings
+
+# array.each do |number|
+#   strings << number.to_s
+# end
+# p strings
+
+strings = array.map do |number|
+  number.to_s
 end
-p ages
+p strings
