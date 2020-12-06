@@ -147,9 +147,9 @@
 # p short_names
 
 # 7
-numbers = [8, 23, 0, 44, 1980, 3]
-small_numbers = []
-index = 0
+# numbers = [8, 23, 0, 44, 1980, 3]
+# small_numbers = []
+# index = 0
 # while index < numbers.length
 #   if numbers[index] >= 23
 #     small_numbers << numbers[index]
@@ -165,7 +165,32 @@ index = 0
 # end
 # p small_numbers
 
-small_numbers = numbers.select do |number|
-  number >= 23
+# small_numbers = numbers.select do |number|
+#   number >= 23
+# end
+# p small_numbers
+
+# 8
+strings = ["big", "little", "good", "bad"]
+non_b_strings = []
+# index = 0
+# while index < strings.length
+#   string = strings[index]
+#   if string[0] != "b"
+#     non_b_strings << string
+#   end
+#   index += 1
+# end
+# p non_b_strings
+
+# strings.each do |string|
+#   if string[0] != "b"
+#     non_b_strings << string
+#   end
+# end
+# p non_b_strings
+
+non_b_strings = strings.select do |string|
+  string[0] != "b"
 end
-p small_numbers
+p non_b_strings
