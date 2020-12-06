@@ -122,8 +122,8 @@
 # p short_strings
 
 # 6
-items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
-short_names = []
+# items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+# short_names = []
 # index = 0
 # while index < items.length
 #   item = items[index]
@@ -141,7 +141,31 @@ short_names = []
 # end
 # p short_names
 
-short_names = items.select do |item|
-  item[:name].length < 6
+# short_names = items.select do |item|
+#   item[:name].length < 6
+# end
+# p short_names
+
+# 7
+numbers = [8, 23, 0, 44, 1980, 3]
+small_numbers = []
+index = 0
+# while index < numbers.length
+#   if numbers[index] >= 23
+#     small_numbers << numbers[index]
+#   end
+#   index += 1
+# end
+# p small_numbers
+
+# numbers.each do |number|
+#   if number >= 23
+#     small_numbers << number
+#   end
+# end
+# p small_numbers
+
+small_numbers = numbers.select do |number|
+  number >= 23
 end
-p short_names
+p small_numbers
