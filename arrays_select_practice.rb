@@ -196,8 +196,8 @@
 # p non_b_strings
 
 # 9
-items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
-cheap_items = []
+# items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+# cheap_items = []
 # index = 0
 # while index < items.length
 #   item = items[index]
@@ -215,7 +215,32 @@ cheap_items = []
 # end
 # p cheap_items
 
-cheap_items = items.select do |item|
-  item[:price] < 10
+# cheap_items = items.select do |item|
+#   item[:price] < 10
+# end
+# p cheap_items
+
+# 10
+numbers = [2, 4, 5, 1, 8, 9, 7]
+odd_numbers = []
+# index = 0
+# while index < numbers.length
+#   number = numbers[index]
+#   if number % 2 != 0
+#     odd_numbers << number
+#   end
+#   index += 1
+# end
+# p odd_numbers
+
+# numbers.each do |number|
+#   if number % 2 != 0
+#     odd_numbers << number
+#   end
+# end
+# p odd_numbers
+
+odd_numbers = numbers.select do |number|
+  number % 2 != 0
 end
-p cheap_items
+p odd_numbers
