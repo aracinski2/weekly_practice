@@ -171,8 +171,8 @@
 # p small_numbers
 
 # 8
-strings = ["big", "little", "good", "bad"]
-non_b_strings = []
+# strings = ["big", "little", "good", "bad"]
+# non_b_strings = []
 # index = 0
 # while index < strings.length
 #   string = strings[index]
@@ -190,7 +190,32 @@ non_b_strings = []
 # end
 # p non_b_strings
 
-non_b_strings = strings.select do |string|
-  string[0] != "b"
+# non_b_strings = strings.select do |string|
+#   string[0] != "b"
+# end
+# p non_b_strings
+
+# 9
+items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+cheap_items = []
+# index = 0
+# while index < items.length
+#   item = items[index]
+#   if item[:price] < 10
+#     cheap_items << item
+#   end
+#   index += 1
+# end
+# p cheap_items
+
+# items.each do |item|
+#   if item[:price] < 10
+#     cheap_items << item
+#   end
+# end
+# p cheap_items
+
+cheap_items = items.select do |item|
+  item[:price] < 10
 end
-p non_b_strings
+p cheap_items
