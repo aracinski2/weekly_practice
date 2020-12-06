@@ -97,8 +97,8 @@
 # p even_numbers
 
 # 5
-strings = ["a", "man", "a", "plan", "a", "canal", "panama"]
-short_strings = []
+# strings = ["a", "man", "a", "plan", "a", "canal", "panama"]
+# short_strings = []
 # index = 0
 # while index < strings.length
 #   string = strings[index]
@@ -116,7 +116,32 @@ short_strings = []
 # end
 # p short_strings
 
-short_strings = strings.select do |string|
-  string.length < 4
+# short_strings = strings.select do |string|
+#   string.length < 4
+# end
+# p short_strings
+
+# 6
+items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+short_names = []
+# index = 0
+# while index < items.length
+#   item = items[index]
+#   if item[:name].length < 6
+#     short_names << item
+#   end
+#   index += 1
+# end
+# p short_names
+
+# items.each do |item|
+#   if item[:name].length < 6
+#     short_names << item
+#   end
+# end
+# p short_names
+
+short_names = items.select do |item|
+  item[:name].length < 6
 end
-p short_strings
+p short_names
