@@ -22,8 +22,8 @@
 # p numbers_less
 
 # 2
-strings = ["winner", "winner", "chicken", "dinner"]
-w_strings = []
+# strings = ["winner", "winner", "chicken", "dinner"]
+# w_strings = []
 # index = 0
 # while index < strings.length
 #   string = strings[index]
@@ -41,7 +41,32 @@ w_strings = []
 # end
 # p w_strings
 
-w_strings = strings.select do |string|
-  string[0] == "w"
+# w_strings = strings.select do |string|
+#   string[0] == "w"
+# end
+# p w_strings
+
+# 3
+items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+pricey_items = []
+# index = 0
+# while index < items.length
+#   item = items[index]
+#   if item[:price] > 5
+#     pricey_items << item
+#   end
+#   index += 1
+# end
+# p pricey_items
+
+# items.each do |item|
+#   if item[:price] > 5
+#     pricey_items << item
+#   end
+# end
+# p pricey_items
+
+pricey_items = items.select do |item|
+  item[:price] > 5
 end
-p w_strings
+p pricey_items
