@@ -47,8 +47,8 @@
 # p w_strings
 
 # 3
-items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
-pricey_items = []
+# items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+# pricey_items = []
 # index = 0
 # while index < items.length
 #   item = items[index]
@@ -66,7 +66,32 @@ pricey_items = []
 # end
 # p pricey_items
 
-pricey_items = items.select do |item|
-  item[:price] > 5
+# pricey_items = items.select do |item|
+#   item[:price] > 5
+# end
+# p pricey_items
+
+# 4
+numbers = [2, 4, 5, 1, 8, 9, 7]
+even_numbers = []
+# index = 0
+# while index < numbers.length
+#   number = numbers[index]
+#   if number.even?
+#     even_numbers << number
+#   end
+#   index += 1
+# end
+# p even_numbers
+
+# numbers.each do |number|
+#   if number.even?
+#     even_numbers << number
+#   end
+# end
+# p even_numbers
+
+even_numbers = numbers.select do |number|
+  number.even?
 end
-p pricey_items
+p even_numbers
