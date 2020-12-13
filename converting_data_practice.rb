@@ -64,10 +64,23 @@
 # p hash
 
 # 7
-hash = {"a" => 1, "b" => 2, "c" => 3, "d" => 4}
-array = []
-hash.each do |key, value|
-  array << key
-  array << value
+# hash = {"a" => 1, "b" => 2, "c" => 3, "d" => 4}
+# array = []
+# hash.each do |key, value|
+#   array << key
+#   array << value
+# end
+# p array
+
+# 8
+hash = {"chair" => 75, "book" => 15}
+array = [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}]
+new_hash = Hash.new
+array.each do |item|
+  name = item[:name]
+  color = item[:color]
+  weight = item[:weight]
+  price = hash[name]
+  new_hash[name] = {price: price, color: color, weight: weight}
 end
-p array
+p new_hash
