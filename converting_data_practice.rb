@@ -53,12 +53,21 @@
 # p array
 
 # 6
-strings = ["do", "or", "do", "not"]
-hash = Hash.new
-strings.each do |string|
-  if hash[string] == nil
-    hash[string] = 0
-  end
-  hash[string] +=1
+# strings = ["do", "or", "do", "not"]
+# hash = Hash.new
+# strings.each do |string|
+#   if hash[string] == nil
+#     hash[string] = 0
+#   end
+#   hash[string] +=1
+# end
+# p hash
+
+# 7
+hash = {"a" => 1, "b" => 2, "c" => 3, "d" => 4}
+array = []
+hash.each do |key, value|
+  array << key
+  array << value
 end
-p hash
+p array
