@@ -40,14 +40,25 @@
 # p array
 
 # 5
-hash = {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}}
-array = []
-hash.each do |key, value|
-  new_hash = Hash.new
-  new_hash[:id] = key
-  value.each do |k, v|
-    new_hash[k] = v
+# hash = {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}}
+# array = []
+# hash.each do |key, value|
+#   new_hash = Hash.new
+#   new_hash[:id] = key
+#   value.each do |k, v|
+#     new_hash[k] = v
+#   end
+#   array << new_hash
+# end
+# p array
+
+# 6
+strings = ["do", "or", "do", "not"]
+hash = Hash.new
+strings.each do |string|
+  if hash[string] == nil
+    hash[string] = 0
   end
-  array << new_hash
+  hash[string] +=1
 end
-p array
+p hash
