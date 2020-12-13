@@ -15,15 +15,26 @@
 # p hash
 
 # 3
-string = "bookkeeper"
-hash = Hash.new
-index = 0
-while index < string.length
-  letter = string[index]
-  if hash[letter] == nil
-    hash[letter] = 0
-  end
-  hash[letter] += 1
-  index += 1
+# string = "bookkeeper"
+# hash = Hash.new
+# index = 0
+# while index < string.length
+#   letter = string[index]
+#   if hash[letter] == nil
+#     hash[letter] = 0
+#   end
+#   hash[letter] += 1
+#   index += 1
+# end
+# p hash
+
+# 4
+hash = {"chair" => 100, "book" => 14}
+array = []
+hash.each do |key, value|
+  new_array = []
+  new_array << key
+  new_array << value
+  array << new_array
 end
-p hash
+p array
