@@ -86,15 +86,23 @@
 # p new_hash
 
 # 9
-array = [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}]
-hash_of_arrays = Hash.new
-array.each do |book|
-  author = book[:author]
-  title = book[:title]
+# array = [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}]
+# hash_of_arrays = Hash.new
+# array.each do |book|
+#   author = book[:author]
+#   title = book[:title]
 
-  if hash_of_arrays[author] == nil
-    hash_of_arrays[author] = []
-  end
-  hash_of_arrays[author] << title
+#   if hash_of_arrays[author] == nil
+#     hash_of_arrays[author] = []
+#   end
+#   hash_of_arrays[author] << title
+# end
+# p hash_of_arrays
+
+# 10
+hash = {"a" => 1, "b" => 2, "c" => 3}
+new_hash = Hash.new
+hash.each do |key, value|
+  new_hash[value] = key
 end
-p hash_of_arrays
+p new_hash
