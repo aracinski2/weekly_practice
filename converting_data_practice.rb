@@ -29,12 +29,25 @@
 # p hash
 
 # 4
-hash = {"chair" => 100, "book" => 14}
+# hash = {"chair" => 100, "book" => 14}
+# array = []
+# hash.each do |key, value|
+#   new_array = []
+#   new_array << key
+#   new_array << value
+#   array << new_array
+# end
+# p array
+
+# 5
+hash = {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}}
 array = []
 hash.each do |key, value|
-  new_array = []
-  new_array << key
-  new_array << value
-  array << new_array
+  new_hash = Hash.new
+  new_hash[:id] = key
+  value.each do |k, v|
+    new_hash[k] = v
+  end
+  array << new_hash
 end
 p array
