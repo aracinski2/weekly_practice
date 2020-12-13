@@ -73,14 +73,28 @@
 # p array
 
 # 8
-hash = {"chair" => 75, "book" => 15}
-array = [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}]
-new_hash = Hash.new
-array.each do |item|
-  name = item[:name]
-  color = item[:color]
-  weight = item[:weight]
-  price = hash[name]
-  new_hash[name] = {price: price, color: color, weight: weight}
+# hash = {"chair" => 75, "book" => 15}
+# array = [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}]
+# new_hash = Hash.new
+# array.each do |item|
+#   name = item[:name]
+#   color = item[:color]
+#   weight = item[:weight]
+#   price = hash[name]
+#   new_hash[name] = {price: price, color: color, weight: weight}
+# end
+# p new_hash
+
+# 9
+array = [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}]
+hash_of_arrays = Hash.new
+array.each do |book|
+  author = book[:author]
+  title = book[:title]
+
+  if hash_of_arrays[author] == nil
+    hash_of_arrays[author] = []
+  end
+  hash_of_arrays[author] << title
 end
-p new_hash
+p hash_of_arrays
