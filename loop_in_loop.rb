@@ -65,15 +65,30 @@
 # p largest
 
 # 5
-array = [[1, 3], [8, 9], [2, 16]]
-sum = 0
+# array = [[1, 3], [8, 9], [2, 16]]
+# sum = 0
+# index = 0
+# while index < array.length
+#   index2 = 0
+#   while index2 < array[index].length
+#     sum = sum + array[index][index2]
+#     index2 +=1
+#   end
+#   index += 1
+# end
+# p sum
+
+# 5
+array1 = [1, 2]
+array2 = [6, 7, 8]
+sums_array = []
 index = 0
-while index < array.length
+while index < array1.length
   index2 = 0
-  while index2 < array[index].length
-    sum = sum + array[index][index2]
-    index2 +=1
+  while index2 < array2.length
+    sums_array << array1[index] + array2[index2]
+    index2 += 1
   end
   index += 1
 end
-p sum
+p sums_array
