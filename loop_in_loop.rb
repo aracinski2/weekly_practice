@@ -127,25 +127,39 @@
 # p largest
 
 # 9
-array = [2, 5, 3, 1, 0, 7, 11]
+# array = [2, 5, 3, 1, 0, 7, 11]
 # new_array = []
-result = false
+# result = false
+# index = 0
+# while index < array.length
+#   index2 = 0
+#   while index2 < array.length
+#     if array[index] != array[index2]
+#       sum = array[index] + array[index2]
+#       if sum == 10 && result == false
+#         # new_array << array[index]
+#         # new_array << array[index2]
+#         # return new_array
+#         # break
+#         result = [array[index], array[index2]]
+#       end
+#     end
+#     index2 += 1
+#   end
+#   index += 1
+# end
+# p result
+
+# 10
+array = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]]
+string = ""
 index = 0
 while index < array.length
   index2 = 0
-  while index2 < array.length
-    if array[index] != array[index2]
-      sum = array[index] + array[index2]
-      if sum == 10 && result == false
-        # new_array << array[index]
-        # new_array << array[index2]
-        # return new_array
-        # break
-        result = [array[index], array[index2]]
-      end
-    end
+  while index2 < array[index].length
+    string += array[index][index2]
     index2 += 1
   end
   index += 1
 end
-p result
+p string
