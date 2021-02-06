@@ -78,17 +78,31 @@
 # end
 # p sum
 
-# 5
-array1 = [1, 2]
-array2 = [6, 7, 8]
-sums_array = []
+# 6
+# array1 = [1, 2]
+# array2 = [6, 7, 8]
+# sums_array = []
+# index = 0
+# while index < array1.length
+#   index2 = 0
+#   while index2 < array2.length
+#     sums_array << array1[index] + array2[index2]
+#     index2 += 1
+#   end
+#   index += 1
+# end
+# p sums_array
+
+# 7
+array = [2, 8, 3]
+products = []
 index = 0
-while index < array1.length
+while index < array.length
   index2 = 0
-  while index2 < array2.length
-    sums_array << array1[index] + array2[index2]
+  while index2 < array.length
+    products << array[index] * array[index2]
     index2 += 1
   end
   index += 1
 end
-p sums_array
+p products
