@@ -46,20 +46,34 @@
 # p combined_strings
 
 # 4
-array = [5, -2, 1, -9, -7, 2, 6]
-largest = 0
+# array = [5, -2, 1, -9, -7, 2, 6]
+# largest = 0
+# index = 0
+# while index < array.length
+#   index2 = 0
+#   while index2 < array.length
+#     if array[index] != array[index2]
+#       product = array[index] * array[index2]
+#       if product > largest
+#         largest = product
+#       end
+#     end
+#     index2 += 1
+#   end
+#   index += 1
+# end
+# p largest
+
+# 5
+array = [[1, 3], [8, 9], [2, 16]]
+sum = 0
 index = 0
 while index < array.length
   index2 = 0
-  while index2 < array.length
-    if array[index] != array[index2]
-      product = array[index] * array[index2]
-      if product > largest
-        largest = product
-      end
-    end
-    index2 += 1
+  while index2 < array[index].length
+    sum = sum + array[index][index2]
+    index2 +=1
   end
   index += 1
 end
-p largest
+p sum
