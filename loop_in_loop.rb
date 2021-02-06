@@ -94,15 +94,34 @@
 # p sums_array
 
 # 7
-array = [2, 8, 3]
-products = []
+# array = [2, 8, 3]
+# products = []
+# index = 0
+# while index < array.length
+#   index2 = 0
+#   while index2 < array.length
+#     products << array[index] * array[index2]
+#     index2 += 1
+#   end
+#   index += 1
+# end
+# p products
+
+# 8
+array = [1, 8, 3, 10]
+largest = 0
 index = 0
 while index < array.length
   index2 = 0
   while index2 < array.length
-    products << array[index] * array[index2]
+    if array[index] != array[index2]
+      sum = array[index] + array[index2]
+      if sum > largest
+        largest = sum
+      end
+    end
     index2 += 1
   end
   index += 1
 end
-p products
+p largest
