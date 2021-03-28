@@ -91,15 +91,32 @@
 # p sums
 
 # 7
-numbers = [2, 8, 3]
+# numbers = [2, 8, 3]
+# index = 0
+# products = []
+# while index < numbers.length
+#   index_2 = 0
+#   while index_2 < numbers.length
+#     products << numbers[index] * numbers[index_2]
+#     index_2 += 1
+#   end
+#   index += 1
+# end
+# p products
+
+# 8
+numbers = [1, 8, 3, 10]
 index = 0
-products = []
+highest_sum = 0
 while index < numbers.length
-  index_2 = 0
+  index_2 = index + 1
   while index_2 < numbers.length
-    products << numbers[index] * numbers[index_2]
+    sum = numbers[index] + numbers[index_2]
+    if highest_sum < sum
+      highest_sum = sum
+    end
     index_2 += 1
   end
   index += 1
 end
-p products
+p highest_sum
