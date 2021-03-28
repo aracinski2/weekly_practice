@@ -61,16 +61,31 @@
 # p highest_product
 
 # 5
-numbered_pairs = [[1, 3], [8, 9], [2, 16]]
+# numbered_pairs = [[1, 3], [8, 9], [2, 16]]
+# index = 0
+# sum = 0
+# while index < numbered_pairs.length
+#   index_2 = 0
+#   while index_2 < numbered_pairs[index].length
+#     number = numbered_pairs[index][index_2]
+#     sum += number
+#     index_2 += 1
+#   end
+#   index += 1
+# end
+# p sum
+
+# 6
+numbers = [1, 2]
+numbers_2 = [6, 7, 8]
 index = 0
-sum = 0
-while index < numbered_pairs.length
+sums = []
+while index < numbers.length
   index_2 = 0
-  while index_2 < numbered_pairs[index].length
-    number = numbered_pairs[index][index_2]
-    sum += number
-    index_2 += 1
+  while index_2 < numbers_2.length
+    sums << numbers[index] + numbers_2[index_2]
+    index_2 +=1
   end
   index += 1
 end
-p sum
+p sums
