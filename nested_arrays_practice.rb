@@ -76,16 +76,30 @@
 # p sum
 
 # 6
-numbers = [1, 2]
-numbers_2 = [6, 7, 8]
+# numbers = [1, 2]
+# numbers_2 = [6, 7, 8]
+# index = 0
+# sums = []
+# while index < numbers.length
+#   index_2 = 0
+#   while index_2 < numbers_2.length
+#     sums << numbers[index] + numbers_2[index_2]
+#     index_2 +=1
+#   end
+#   index += 1
+# end
+# p sums
+
+# 7
+numbers = [2, 8, 3]
 index = 0
-sums = []
+products = []
 while index < numbers.length
   index_2 = 0
-  while index_2 < numbers_2.length
-    sums << numbers[index] + numbers_2[index_2]
-    index_2 +=1
+  while index_2 < numbers.length
+    products << numbers[index] * numbers[index_2]
+    index_2 += 1
   end
   index += 1
 end
-p sums
+p products
