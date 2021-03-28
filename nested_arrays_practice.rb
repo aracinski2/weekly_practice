@@ -122,18 +122,32 @@
 # p highest_sum
 
 # 9
-numbers = [2, 5, 3, 1, 0, 7, 11]
+# numbers = [2, 5, 3, 1, 0, 7, 11]
+# index = 0
+# result = false
+# while index < numbers.length
+#   index_2 = index + 1
+#   while index_2 < numbers.length
+#     sum = numbers[index] + numbers[index_2]
+#     if sum == 10 && result == false
+#       result = [numbers[index], numbers[index_2]]
+#     end
+#     index_2 += 1
+#   end
+#   index += 1
+# end
+# p result
+
+# 10
+string_arrays = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]]
 index = 0
-result = false
-while index < numbers.length
-  index_2 = index + 1
-  while index_2 < numbers.length
-    sum = numbers[index] + numbers[index_2]
-    if sum == 10 && result == false
-      result = [numbers[index], numbers[index_2]]
-    end
+string = ""
+while index < string_arrays.length
+  index_2 = 0
+  while index_2 < string_arrays[index].length
+    string += string_arrays[index][index_2]
     index_2 += 1
   end
   index += 1
 end
-p result
+p string
