@@ -58,3 +58,13 @@ a = "chicago"
 b = "new york"
 c = "LA"
 p a + " is where I live, but " + b + " is where i wanna visit." + c + " is where ive been."
+
+string = "hello"
+index = 0
+new_string = ""
+while index < string.length
+  new_string << string[-1]
+  index += 1
+end
+p string
+p new_string
