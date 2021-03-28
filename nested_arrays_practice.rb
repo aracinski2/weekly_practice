@@ -105,18 +105,35 @@
 # p products
 
 # 8
-numbers = [1, 8, 3, 10]
+# numbers = [1, 8, 3, 10]
+# index = 0
+# highest_sum = 0
+# while index < numbers.length
+#   index_2 = index + 1
+#   while index_2 < numbers.length
+#     sum = numbers[index] + numbers[index_2]
+#     if highest_sum < sum
+#       highest_sum = sum
+#     end
+#     index_2 += 1
+#   end
+#   index += 1
+# end
+# p highest_sum
+
+# 9
+numbers = [2, 5, 3, 1, 0, 7, 11]
 index = 0
-highest_sum = 0
+result = false
 while index < numbers.length
   index_2 = index + 1
   while index_2 < numbers.length
     sum = numbers[index] + numbers[index_2]
-    if highest_sum < sum
-      highest_sum = sum
+    if sum == 10 && result == false
+      result = [numbers[index], numbers[index_2]]
     end
     index_2 += 1
   end
   index += 1
 end
-p highest_sum
+p result
