@@ -28,17 +28,34 @@
 # p combined_strings
 
 # 3
-letters = ["a", "b", "c", "d"]
+# letters = ["a", "b", "c", "d"]
+# index = 0
+# strings = []
+# while index < letters.length
+#   index_2 = 0
+#   while index_2 < letters.length
+#     if index != index_2
+#       strings << letters[index] + letters[index_2]
+#     end
+#     index_2 += 1
+#   end
+#   index += 1
+# end
+# p strings
+
+# 4
+numbers = [5, -2, 1, -9, -7, 2, 6]
 index = 0
-strings = []
-while index < letters.length
-  index_2 = 0
-  while index_2 < letters.length
-    if index != index_2
-      strings << letters[index] + letters[index_2]
+highest_product = 0
+while index < numbers.length
+  index_2 = index + 1
+  while index_2 < numbers.length
+    product = numbers[index] * numbers[index_2]
+    if highest_product < product
+      highest_product = product
     end
     index_2 += 1
   end
-  index += 1
+  index +=1
 end
-p strings
+p highest_product
