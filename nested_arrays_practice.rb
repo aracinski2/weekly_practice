@@ -44,18 +44,33 @@
 # p strings
 
 # 4
-numbers = [5, -2, 1, -9, -7, 2, 6]
+# numbers = [5, -2, 1, -9, -7, 2, 6]
+# index = 0
+# highest_product = 0
+# while index < numbers.length
+#   index_2 = index + 1
+#   while index_2 < numbers.length
+#     product = numbers[index] * numbers[index_2]
+#     if highest_product < product
+#       highest_product = product
+#     end
+#     index_2 += 1
+#   end
+#   index +=1
+# end
+# p highest_product
+
+# 5
+numbered_pairs = [[1, 3], [8, 9], [2, 16]]
 index = 0
-highest_product = 0
-while index < numbers.length
-  index_2 = index + 1
-  while index_2 < numbers.length
-    product = numbers[index] * numbers[index_2]
-    if highest_product < product
-      highest_product = product
-    end
+sum = 0
+while index < numbered_pairs.length
+  index_2 = 0
+  while index_2 < numbered_pairs[index].length
+    number = numbered_pairs[index][index_2]
+    sum += number
     index_2 += 1
   end
-  index +=1
+  index += 1
 end
-p highest_product
+p sum
